@@ -38,11 +38,9 @@
                     <li><a class="header__link" href="#advantages">О нас</a></li>
                     <li><a class="header__link" href="#chose">Клиенты</a></li>
                     <li><a class="header__link" href="#map">Контакты</a></li>
-                    <a class="header__tel header__tel_hidden" href="tel:+74852436571">+7 (4852) 43-65-71</a>
+                    <li><a class="header__tel header__tel_hidden" href="tel:+74852436571">+7 (4852) 43-65-71</a></li>
                 </ul>
             </nav>
-    
-            <!-- header__burger -->
             <button class="hamburger hamburger--collapse header__burger" type="button">
                 <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
@@ -60,11 +58,12 @@
                         <h2 class="promo__subtitle">Решим вашу задачу любой сложности</h2>
                         <button class="btn btn_promo" id="btn_modal_window">Заказать</button>
                     </div>
-                    <div class="promo__car">
-                        <img src="assets/img/promo/car.png" alt="car">
-                    </div>
+                    <picture class="promo__car">
+                        <source srcset="/assets/img/promo/car.webp">
+                        </source>
+                        <img src="/assets/img/promo/car.png" alt="car"></img>
+                    </picture>
                 </div>
-    
                 <div class="promo__circle" id="tel_modal_window">
                     <div class="promo__tell">
                         <img class="promo__tell-img" src="assets/img/promo/phone.svg" alt="tel">
@@ -128,8 +127,9 @@
                     <div class="costs__item">
                         <div class="costs__table">
                             <table class="table">
-                                <caption class="table__title">Раствор</caption>
-                                <caption class="table__subtitle">руб./куб.м3</caption>
+                                <caption class="table__title">Раствор <br>
+                                    <span class="table__subtitle">руб./куб.м3</span>
+                                </caption>
                                 <tr class="table__border">
                                     <td class="table__text">М 50</td>
                                     <td class="table__text">2500</td>
@@ -156,8 +156,9 @@
                                 </tr>
                             </table>
                             <table class="table table_margin-left">
-                                <caption class="table__title">Бетон</caption>
-                                <caption class="table__subtitle">руб./куб.м3</caption>
+                                <caption class="table__title">Бетон <br>
+                                    <span class="table__subtitle">руб./куб.м3</span>
+                                </caption>
                                 <tr class="table__border">
                                     <td class="table__text">М 100</td>
                                     <td class="table__text">2800</td>
@@ -286,9 +287,20 @@
                 <h2 class="title">Закажи прямо сейчас</h2>
                 <h3 class="title__sub">Мы перезвоним в течении 30 минут</h3>
                 <div class="order__inner">
-                    <div class="order__img-worker">
+    
+    
+                    <picture class="order__img-worker">
+                        <source srcset="/assets/img/worker.webp" type="image/webp">
+                        </source>
+                        <img src="/assets/img/worker.png" alt="worker"></img>
+                    </picture>
+    
+    
+                    <!-- <div class="order__img-worker">
                         <img src="assets/img/worker.png" alt="worker">
-                    </div>
+                    </div> -->
+    
+    
                     <form class="order__form" action="none">
                         <input class="order__input" type="text" name="name" placeholder="Ваше имя" maxlength="50"
                             pattern="^[А-Яа-яЁё\s]+$" title="Пожалуйста, напишите свое имя на русском языке">

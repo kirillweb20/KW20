@@ -515,7 +515,8 @@ p {
     justify-content: center;
 }
 
-.promo__car img {
+.promo__car img,
+    .promo__car source {
     max-width: 100%;
 }
 
@@ -747,7 +748,8 @@ p {
     align-self: center;
 }
 
-.order__img-worker img {
+.order__img-worker img,
+    .order__img-worker source {
     max-width: 100%;
 }
 
@@ -1121,6 +1123,7 @@ p {
 }
 
 .table__subtitle {
+    display: block;
     caption-side: top;
     margin-bottom: 20px;
     padding: 0;
@@ -1454,6 +1457,7 @@ p {
         -webkit-transition: all 1.0s;
         -o-transition: all 1.0s;
         transition: all 1.0s;
+        overflow: hidden;
     }
 
     .header__ul li {
