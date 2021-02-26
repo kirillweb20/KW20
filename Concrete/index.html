@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
-    
+
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +16,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/fav/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/fav/favicon-16x16.png">
@@ -23,8 +24,9 @@
     <link rel="mask-icon" href="assets/img/fav/safari-pinned-tab.svg" color="#191919">
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="theme-color" content="#ececec">
-    
-    <title>БетонМобил</title></head>
+
+    <title>БетонМобил</title>
+</head>
 
 <body>
 
@@ -48,7 +50,7 @@
             </button>
         </div>
     </header>
-    
+
     <main>
         <section class="promo" id="promo">
             <div class="container">
@@ -56,22 +58,23 @@
                     <div class="promo__set-title wow fadeInUp">
                         <h1 class="promo__title">Доставляем <br><span>Бетон <br> и Раствор</span></h1>
                         <h2 class="promo__subtitle">Решим вашу задачу любой сложности</h2>
-                        <button class="btn btn_promo" id="btn_modal_window">Заказать</button>
+                        <button class="btn btn_promo" type="button"
+                            data-modal="contact-modal">Заказать</button>
                     </div>
                     <picture class="promo__car wow fadeInRight">
                         <source srcset="assets/img/promo/car.webp">
                         <img src="assets/img/promo/car.png" alt="car">
                     </picture>
                 </div>
-                <div class="promo__circle" id="tel_modal_window">
+                <div class="promo__circle" data-modal="contact-modal">
                     <div class="promo__tell">
                         <img class="promo__tell-img" src="assets/img/promo/phone.svg" alt="tel">
                     </div>
                 </div>
             </div>
         </section>
-    
-    
+
+
         <section class="numbers">
             <div class="container">
                 <div class="item-block">
@@ -93,7 +96,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="advantages" id="advantages">
             <div class="container">
                 <h2 class="title wow fadeInUp">Наши преимущества</h2>
@@ -106,7 +109,8 @@
                     </div>
                     <div class="item-block__item wow fadeInUp" data-wow-delay="0.4s">
                         <h3 class="item-block__title">Собственный автопарк</h3>
-                        <p class="item-block__text item-block__text_width">Бетоносмесители, самосвалы, тонары, погрузчики.
+                        <p class="item-block__text item-block__text_width">Бетоносмесители, самосвалы, тонары,
+                            погрузчики.
                         </p>
                     </div>
                     <div class="item-block__item wow fadeInUp" data-wow-delay="0.6s">
@@ -118,7 +122,7 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="costs" id="costs">
             <div class="container">
                 <h2 class="title wow fadeInUp">Цены</h2>
@@ -200,7 +204,8 @@
                     <div class="costs__item wow fadeInRight">
                         <div class="costs__text-block">
                             <h3 class="costs__title">Доставка бетона и раствора:</h3>
-                            <p class="costs__text">Осуществляется автобетоносмесителями: 6 куб.м.; 8 куб.м. <br> Минимальная
+                            <p class="costs__text">Осуществляется автобетоносмесителями: 6 куб.м.; 8 куб.м. <br>
+                                Минимальная
                                 стоимость доставки по городу Ярославлю - 2400 руб. <br> Доставка по Ярославской области
                                 рассчитывается отдельно.</p>
                         </div>
@@ -217,7 +222,8 @@
                                 бетононасоса рассчитываются индивидуально.</p>
                         </div>
                         <div class="costs__text-block">
-                            <p class="costs__text">Звоните. Мы поможем вам выбрать марку, рассчитать объем и доставку. </p>
+                            <p class="costs__text">Звоните. Мы поможем вам выбрать марку, рассчитать объем и доставку.
+                            </p>
                         </div>
                         <div class="costs__text-block">
                             <a class="costs__text-tel" href="tel:+74852436571">+7 (4852) 43-65-71</a>
@@ -229,8 +235,8 @@
                 </div>
             </div>
         </section>
-    
-    
+
+
         <section class="conditions">
             <div class="container">
                 <h2 class="title wow fadeInUp">Условия работы</h2>
@@ -276,11 +282,11 @@
                     <div class="conditions__img wow fadeInRight">
                         <img src="assets/img/work.jpg" alt="conditions-work">
                     </div>
-    
+
                 </div>
             </div>
         </section>
-    
+
         <section class="order">
             <div class="container">
                 <h2 class="title wow fadeInUp">Закажи прямо сейчас</h2>
@@ -305,29 +311,35 @@
                 </div>
             </div>
         </section>
-    
+
         <section class="chose" id="chose">
             <div class="container">
                 <h2 class="title wow fadeInUp">Нас выбрали</h2>
                 <div class="chose__inner">
-                    <div class="chose__img wow fadeIn" data-wow-delay="0.2s"><img src="assets/img/choice/1.png" alt="store">
+                    <div class="chose__img wow fadeIn" data-wow-delay="0.2s"><img src="assets/img/choice/1.png"
+                            alt="store">
                     </div>
-                    <div class="chose__img wow fadeIn" data-wow-delay="0.3s"><img src="assets/img/choice/2.png" alt="store">
+                    <div class="chose__img wow fadeIn" data-wow-delay="0.3s"><img src="assets/img/choice/2.png"
+                            alt="store">
                     </div>
-                    <div class="chose__img wow fadeIn" data-wow-delay="0.4s"><img src="assets/img/choice/3.png" alt="store">
+                    <div class="chose__img wow fadeIn" data-wow-delay="0.4s"><img src="assets/img/choice/3.png"
+                            alt="store">
                     </div>
                 </div>
                 <div class="chose__inner">
-                    <div class="chose__img wow fadeIn" data-wow-delay="0.5s"><img src="assets/img/choice/4.png" alt="store">
+                    <div class="chose__img wow fadeIn" data-wow-delay="0.5s"><img src="assets/img/choice/4.png"
+                            alt="store">
                     </div>
-                    <div class="chose__img wow fadeIn" data-wow-delay="0.6s"><img src="assets/img/choice/5.png" alt="store">
+                    <div class="chose__img wow fadeIn" data-wow-delay="0.6s"><img src="assets/img/choice/5.png"
+                            alt="store">
                     </div>
-                    <div class="chose__img wow fadeIn" data-wow-delay="0.7s"><img src="assets/img/choice/6.png" alt="store">
+                    <div class="chose__img wow fadeIn" data-wow-delay="0.7s"><img src="assets/img/choice/6.png"
+                            alt="store">
                     </div>
                 </div>
             </div>
         </section>
-    
+
         <section class="map" id="map">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d68389.58705719384!2d39.732784581542994!3d57.611513266442174!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b2946b57e0ce7b%3A0xd7c88d29ada8da7f!2z0YPQuy4g0KfQtdGA0L3QvtC_0YDRg9C00L3QsNGPLCAzMCwg0K_RgNC-0YHQu9Cw0LLQu9GMLCDQr9GA0L7RgdC70LDQstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTUwMDIy!5e0!3m2!1sru!2sus!4v1611251223006!5m2!1sru!2sus"
@@ -343,14 +355,14 @@
                 </div>
             </div>
         </section>
-    
-    
+
+
     </main>
     <!-- Модальное окно -->
-    <div id="my_modal" class="modal wow fadeIn">
+    <div class="modal wow fadeIn" id="contact-modal">
         <div class="modal__content">
             <span class="modal__close">&#10006;</span>
-            <form class="order__form" action="none">
+            <form class="order__form" action="/" method="post">
                 <input class="order__input" type="text" name="name" placeholder="Ваше имя" maxlength="50"
                     pattern="^[А-Яа-яЁё\s]+$" title="Пожалуйста, напишите свое имя на русском языке">
                 <input class="order__input order__input_margin" type="text" name="phone" placeholder="Телефон"
@@ -361,7 +373,7 @@
         </div>
     </div>
     <!-- /Модальное окно -->
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -372,7 +384,7 @@
                         <a class="footer__right" href="">Соглашение на обработку персональных данных</a>
                     </li>
                 </ul>
-    
+
                 <ul class="footer__item">
                     <li class="footer__text"><a class="footer__text" href="#promo">Главная</a></li>
                     <li class="footer__text"><a class="footer__text" href="#costs">Цены</a></li>
@@ -391,7 +403,7 @@
                     <li class="footer__text footer__text_margin">
                         <a href="mailto:betonmobil@yandex.ru" class="footer__text">betonmobil@yandex.ru</a>
                     </li>
-                    <li><button class="btn btn_form" id="btn_2_modal_window">Перезвонить мне</button></li>
+                    <li><button class="btn btn_form" data-modal="contact-modal">Перезвонить мне</button></li>
                 </ul>
             </div>
         </div>
